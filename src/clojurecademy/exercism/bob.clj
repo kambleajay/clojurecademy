@@ -6,4 +6,5 @@
   [message]
   (let [trimmed-message (str/trim message)]
     (cond
-      (empty? trimmed-message) "Fine. Be that way!")))
+      (empty? trimmed-message) "Fine. Be that way!"
+      (str/ends-with? message "?") "Sure.")))

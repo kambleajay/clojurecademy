@@ -7,3 +7,9 @@
       (= "Fine. Be that way!" (response-for message))
     ""
     " "))
+
+(deftest test-bob-says-sure-for-question
+  (are [message]
+      (= "Sure." (response-for message))
+    "Does this cryogenic chamber make me look fat?"
+    "4?"))
